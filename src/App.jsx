@@ -1,4 +1,5 @@
 import './App.css'
+import React, {useState} from 'react';
 import Button from './components/Button/Button';
 import JournalItem from './components/JournalItem/JournalItem';
 import LeftPanel from './layout/LeftPanel/LeftPanel.jsx';
@@ -7,6 +8,7 @@ import Body from './layout/Body/body';
 import CardButton from './components/CardButton/CardButton.jsx';
 import JournalList from './components/JournalList/journalList';
 import JournalAddButton from './components/JournalAddButton/journalAddButton';
+import JournalForm from './components/JournalForm/JournalForm.jsx';
 
 function App() {
   const data = [
@@ -16,8 +18,13 @@ function App() {
       date: new Date()
     },
     {
-      title: 'Походы в горы',
-      text: 'Думал, что нашёл что то новое',
+      title: 'Поход в горы',
+      text: 'Думал, что очень много времени...',
+      date: new Date()
+    },
+    {
+      title: 'Первая заметка',
+      text: 'Создал первую заметку, чтобы...',
       date: new Date()
     }
   ]
@@ -43,11 +50,18 @@ function App() {
               date={data[1].date}
             />
           </CardButton>
+          <CardButton>
+            <JournalItem
+              title={data[2].title}
+              text={data[2].text}
+              date={data[2].date}
+            />
+          </CardButton>
         </JournalList>
       </LeftPanel>
 
       <Body>
-        Body
+        <JournalForm />
       </Body>
 
     </div>

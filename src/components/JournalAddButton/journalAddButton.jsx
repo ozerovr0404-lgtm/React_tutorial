@@ -4,7 +4,7 @@ import './JournalAddButton.css';
 function JournalAddButton() {
 
     return (
-        <CardButton>
+        <CardButton className="journal-add">
             Новое воспоминание
         </CardButton>
     );

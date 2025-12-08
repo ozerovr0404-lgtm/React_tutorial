@@ -1,17 +1,14 @@
-.button {
+.button-accent {
+  all: unset;
   border-radius: 6px;
   padding: 8px 30px;
   font-family: inherit;
   cursor: pointer;
-  transition: background 0.25s;
+  background-color: rgb(255, 255, 255);
   font-size: 16px;
   border: none;
-  color: white;
+  color: rgb(221, 10, 10);
 }
-.accent:hover {
+.button-accent:hover {
     border-color: #222096;
-}
-
-.accent {
-    background: #312EB5;
 }

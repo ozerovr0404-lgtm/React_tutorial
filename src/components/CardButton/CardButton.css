@@ -1,16 +1,15 @@
-.card-button {
+.cl {
     border-radius: 3px;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(0, 0, 0, 0.3);
     color: #fff;
     padding: 20px;
     border: none;
     cursor: pointer;
-    text-align: start;
+    text-align: center;
     display: block;
     width: 100%;
 }
 
-.card-button:hover {
-    background: rgba(255, 255, 255, 0.10);
-
+.cl:hover {
+    background: rgb(255, 255, 255, 0.10);
 }
